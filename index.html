@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Video Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <br /><br />
+      <h1 style="text-align: center;">Online Video Converter</h1>
+      <form action="/convert" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <input type="file" name="file"/>
+        </div>
+        <div class="form-group">
+          <label for="to">To:</label>
+          <select class="form-control" name="to">
+            <option>mp4</option>
+            <option>flv</option>
+            <option>mp3</option>
+            <option>avi</option>
+            <option>webm</option>
+            <option>mov</option>
+          </select>
+        </div>
+        <br />
+        <div class="form-group">
+          <button class="btn btn-danger btn-block">
+            Convert
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
